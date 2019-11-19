@@ -8,7 +8,8 @@ import(
   e1071, 
   class, 
   lattice,
-  tsne
+  tsne,
+  dplyr
 )
 
 importFrom(grDevices, dev.off, gray, jpeg, pdf, png, rgb, svg, gray.colors, hsv)

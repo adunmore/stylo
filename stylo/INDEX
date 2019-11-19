@@ -1,0 +1,72 @@
+assign.plot.colors      Assign colors to samples
+change.encoding         Change character encoding
+check.encoding          Check character encoding in corpus folder
+classify                Machine-learning supervised classification
+crossv                  Function to Perform Cross-Validation
+define.plot.area        Define area for scatterplots
+delete.markup           Delete HTML or XML tags
+delete.stop.words       Exclude stop words (e.g. pronouns, particles,
+                        etc.) from a dataset
+dist.cosine             Cosine Distance
+dist.delta              Delta Distance
+dist.entropy            Entropy Distance
+dist.minmax             Min-Max Distance (aka Ruzicka Distance)
+dist.simple             Cosine Distance
+dist.wurzburg           Cosine Delta Distance (aka Wurzburg Distance)
+galbraith               Table of word frequencies (Galbraith, Rowling,
+                        Cobenm, Tolkien, Lewis)
+gui.classify            GUI for the function classify
+gui.oppose              GUI for the function oppose
+gui.stylo               GUI for stylo
+imposters               Authorship Verification Classifier Known as the
+                        Imposters Method
+imposters.optimize      Tuning Parameters for the Imposters Method
+lee                     Table of word frequencies (Lee, Capote,
+                        Faulkner, Styron, etc.)
+load.corpus             Load text files
+load.corpus.and.parse   Load text files and perform pre-processing
+make.frequency.list     Make List of the Most Frequent Elements (e.g.
+                        Words)
+make.ngrams             Make text n-grams
+make.samples            Split text to samples
+make.table.of.frequencies
+                        Prepare a table of (relative) word frequencies
+novels                  A selection of 19th-century English novels
+oppose                  Contrastive analysis of texts
+parse.corpus            Perform pre-processing (tokenization, n-gram
+                        extracting, etc.)
+parse.pos.tags          Extract POS-tags or Words from Annotated
+                        Corpora
+perform.culling         Exclude variables (e.g. words, n-grams) from a
+                        frequency table that are too characteristic for
+                        some samples
+perform.delta           Distance-based classifier
+perform.impostors       An Authorship Verification Classifier Known as
+                        the Impostors Method. ATTENTION: this function
+                        is obsolete; refer to a new implementation, aka
+                        the imposters() function!
+perform.knn             k-Nearest Neighbor classifier
+perform.naivebayes      Naive Bayes classifier
+perform.nsc             Nearest Shrunken Centroids classifier
+perform.svm             Support Vector Machines classifier
+performance.measures    Accuracy, Precision, Recall, and the F Measure
+plot.sample.size        Plot Classification Accuracy for Short Text
+                        Samples
+rolling.classify        Sequential machine-learning classification
+rolling.delta           Sequential stylometric analysis
+size.penalize           Testing Minimal Sample Size for Text
+                        Classification
+stylo                   Stylometric multidimensional analyses
+stylo.default.settings
+                        Setting variables for the package stylo
+stylo.network           Bootstrap consensus networks, with D3
+                        visualization
+stylo.pronouns          List of pronouns
+txt.to.features         Split string of words or other countable
+                        features
+txt.to.words            Split text into words
+txt.to.words.ext        Split text into words: extended version
+zeta.chisquare          Compare two subcorpora using a home-brew
+                        variant of Craig's Zeta
+zeta.craig              Compare two subcorpora using Craig's Zeta
+zeta.eder               Compare two subcorpora using Eder's Zeta
