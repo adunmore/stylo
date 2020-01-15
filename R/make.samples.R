@@ -12,7 +12,8 @@ function(tokenized.text,
             sampling = "no.sampling",
             sample.overlap = 0,
             number.of.samples = 1,
-            sampling.with.replacement = FALSE){
+            sampling.with.replacement = FALSE,
+            messages = TRUE){
 
 
   # checking the format of input data (vector? list?); converting to a list
@@ -54,11 +55,12 @@ function(tokenized.text,
       # initialize variables to sample the text
       text.length = length(current.text)
       number.of.samples = floor((text.length-sample.overlap)/(sample.size-sample.overlap))
-      message(names(tokenized.text)[i])
-      message(paste("\t", "- text length (in words): ", text.length, sep = ""))
-      message(paste("\t", "- nr. of samples: ", number.of.samples, sep = ""))
-      message(paste("\t", "- nr. of words dropped at the end of the text: ", 
-                text.length-(number.of.samples*(sample.size-sample.overlap)), sep = ""))
+      if(messages == TRUE) {message(names(tokenized.text)[i])
+                            message(paste("\t", "- text length (in words): ", text.length, sep = ""))
+                            message(paste("\t", "- nr. of samples: ", number.of.samples, sep = ""))
+                            message(paste("\t", "- nr. of words dropped at the end of the text: ", 
+                                          text.length-(number.of.samples*(sample.size-sample.overlap)), sep = ""))
+                            }
       # iterate over the samples:
       current.start.index = 1
       for(sample.index in 1:number.of.samples) {
@@ -77,10 +79,10 @@ function(tokenized.text,
       # of a given length will be excerpted;
       # initialize variables to sample the text
       text.length = length(current.text)
-      message(names(tokenized.text)[i])
-      message(paste("\t", "- text length (in words): ", text.length, sep = ""))
-      message(paste("\t", "- nr. of random samples: ", number.of.samples, sep = ""))
-      message(paste("\t", "- sample length: ", sample.size, sep = ""))
+      if(messages == TRUE) {message(names(tokenized.text)[i])
+                            message(paste("\t", "- text length (in words): ", text.length, sep = ""))
+                            message(paste("\t", "- nr. of random samples: ", number.of.samples, sep = ""))
+                            message(paste("\t", "- sample length: ", sample.size, sep = ""))}
       # iterate over the samples:
       for(sample.index in 1:number.of.samples) {
         current.sample = head(sample(current.text, replace = sampling.with.replacement), sample.size)
